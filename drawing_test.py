@@ -37,6 +37,7 @@ class DrawingApp:
             self.canvas.postscript(file=path, colormode="color")
 
 # Entry point of the program
+
 if __name__ == "__main__":
     # Create the main Tkinter window
     root = tk.Tk()
