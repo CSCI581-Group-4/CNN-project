@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import filedialog
 
+
 # Define a class for app
 class DrawingApp:
     def __init__(self, master):
@@ -19,12 +20,14 @@ class DrawingApp:
         save_button = tk.Button(master, text="Save", command=self.save_image)
         save_button.pack()
 
+
     # draw on the canvas during mouse movement
     def paint(self, events):
         x1, y1 = (events.x - 1), (events.y - 1)
         x2, y2 = (events.x + 1), (events.y + 1)
         # draws oval in black color or more accurate inking it in
         self.canvas.create_oval(x1, y1, x2, y2, fill="black", width=2)
+
 
     # now save image
     def save_image(self):
@@ -34,6 +37,7 @@ class DrawingApp:
         if path:
             # Save as png 
             self.canvas.postscript(file=path, colormode="color")
+
 
 # Entry point of the program
 if __name__ == "__main__":
