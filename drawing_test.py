@@ -39,6 +39,7 @@ class DrawingApp:
 # Entry point of the program
 
 if __name__ == "__main__":
+    
     # Create the main Tkinter window
     root = tk.Tk()
     # Create an instance of the DrawingApp class, passing the main window
