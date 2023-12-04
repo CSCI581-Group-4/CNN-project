@@ -13,7 +13,7 @@ cnn = tf.keras.models.Sequential()
 # Add the input layer
 cnn.add(tf.keras.layers.Conv2D(1, (14, 14), activation="sigmoid", input_shape=(28, 28, 1)))
 cnn.add(tf.keras.layers.Conv2D(12, (7, 7), activation="sigmoid"))
-cnn.add(tf.keras.layers.AveragePooling2D((3,3)))
+cnn.add(tf.keras.layers.AveragePooling2D((3, 3)))
 cnn.add(tf.keras.layers.Flatten())
 cnn.add(tf.keras.layers.Dense(10, activation="softmax"))
 
