@@ -3,3 +3,5 @@ numpy
 flake8
 opencv-python
 matplotlib
+pydot
+graphviz
